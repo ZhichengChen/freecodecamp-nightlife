@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div
+    h1= title
+    p 输入城市名，看看附近有哪些酒吧
+      br
+      不支持国内的城市
+    
+    form.form-inline(method='post' action='/')
+      div.form-group.mx-sm-5
+        input.form-control#citys(type='text' name='keywords' required)
+      button.btn.btn-outline-primary(type='submit') 搜索
+  br
+  div
+    if result
+      each r in result
+        div.card
+          div.card-img-top
+            img(src='#{r.image_url}')
+          div.card-body
+            h4.card-title= r.name
+            p.card-text= r.location.address1+','+r.location.city+','+r.location.country
+            a.btn.btn-outline-primary(href='/go/#{r.id}') 晚上去
+            if r.users
+              span #{r.users.length} 人已选

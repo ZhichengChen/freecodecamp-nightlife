@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.container
+      block content
+    footer
+      div.container
+        p 
+        |  这个页面由 freecodecamp.cn 的 
+        a(href='https://freecodecamp.cn/ZhichengChen') @ZhichengChen
+        |  创建，
+        p
+        |  按照 
+        a(href='https://freecodecamp.cn/challenges/build-a-nightlife-coordination-app') Build a Nightlife Coordination App 
+        |  的视频和例子。
+        p
+        |  Github repository: 
+        a(href='https://github.com/ZhichengChen/freecodecamp-nightlife') ZhichengChen/freecodecamp-nightlife
+      block scripts
+      script(src='https://code.jquery.com/jquery-1.12.4.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')
+      script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js')
+      script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+      script(src='/javascripts/index.js')

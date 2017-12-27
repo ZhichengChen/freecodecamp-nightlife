@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.card {
+  width: 20rem;
+  float: left;
+  margin: 5px 25px;
+}
+
+.card-img-top {
+  height: 10rem;
+  overflow: hidden;
+}
+
+.card-img-top img {
+  width:100%;
+}
+
+.card-body {
+  min-height: 194px;
+}

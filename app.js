@@ -15,7 +15,7 @@ var Strategy = require('passport-twitter').Strategy;
 passport.use(new Strategy({
     consumerKey: 'FdvbWFwr5UghZaL6O9prhpbvx',
     consumerSecret: 'mjf3TFjgvBAXYxVBXgw9gDa9uUiAtBySmlGQfj4e9TLaYYeR5b',
-    callbackURL: 'https://freecodecamp-zhichengchen.c9users.io/auth/twitter/callback'
+    callbackURL: 'https://freecodecamp-dynamic-nightlife.herokuapp.com/auth/twitter/callback'
   },
   function(token, tokenSecret, profile, cb) {
     return cb(null, profile);
